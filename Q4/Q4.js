@@ -1,3 +1,5 @@
+/** Question 2**/
+
 function capitalizeLetters(mystring){
     let arr = mystring.split(' ');
     for (let i in arr){
@@ -13,7 +15,7 @@ function capitalizeLetters(mystring){
 
 console.log(capitalizeLetters("i love javascript"));
 
-
+/** Question 3**/
 function reverseInteger(myint){
     let mystr = myint.toString();
     let myarr = mystr.split('');
@@ -35,7 +37,7 @@ function reverseInteger(myint){
 console.log(reverseInteger(-134));
 console.log(reverseInteger(134));
 
-
+/** Question 4 and  Question 5**/
 UserCart = [
     {productId: 1, productName: "Mobile", price: 70000},
     {productId: 2, productName: "Laptop", price: 100000},
