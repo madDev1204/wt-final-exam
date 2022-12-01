@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary of Person Based on Age and Experience</title>
+    <style>
+        h1{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <form method="get">
+        <label for="age">Enter Age: </label>
+        <input type="text" id="age"><br>
+        <label for="exp">Enter Experience: </label>
+        <input type="checkbox" id="exp" value="on" checked><br>
+        <input type="button" onclick="getSalary()" value="Get Salary">
+        <h1 id="result">Hello</h1>
+    </form>
+    <script>
+        function getSalary(){
+        var age = document.getElementById("age").value;
+        var exp = document.getElementById("exp").value;
+        var sal =document.getElementById("result");
+        var txt = " ";
+        if(age.value> '' && exp.checked == true){
+            if(age>=35){
+                txt = 6000;
+            }
+            else if(age>=28 && age<35){
+                txt = 4800;
+            }
+            else if(age<28){
+                txt = 3000;
+            }
+        }
+      //  sal.innerHTML = "Hello World";
+       // sal.style.display = "block";
+
+    }
+    </script>
+</body>
+</html>
